@@ -19,29 +19,6 @@ void imprime_vetor(int vetor[TAM]){
 
 }
 
-int busca_simples(int vetor[TAM], int valorProcurado, int *posicaoEncontrada){
-
-    //Auxiliar contador
-    int cont;
-
-    //Verifica se o valor foi encontrado
-    bool valorFoiEncontrado;
-
-    //Percorre a lista em busca do valor
-    for(cont = 0; cont < TAM; cont++){
-        if(vetor[cont] == valorProcurado){
-            valorFoiEncontrado = true;
-            *posicaoEncontrada = cont;
-        }
-    }
-
-    if(valorFoiEncontrado){
-        return 1;
-    }else{
-        return -1;
-    }
-}
-
 int busca_binaria(int vetor[TAM], int valorProcurado, int *posicaoEncontrada){
 
     int esquerda = 0;
